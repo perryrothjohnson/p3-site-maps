@@ -1,8 +1,6 @@
 ---
 title: P3 site maps
 subtitle: weekly drone maps of the Phase 3 construction site
-theme: jekyll-theme-cayman
-skin: dark
 ---
 
 ### [2022 Mar 30](https://www.mapsmadeeasy.com/maps/public/2df1a878e51c403387fa1b1381b5ee68/)
