@@ -3,9 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mhayes-twentytwenty/1.0.0/css/twentytwenty.min.css"/>
+    <style>
+        h2 {
+            text-align: right;
+        }
+        h3 {
+            text-align: center;
+        }
+        .twentytwenty-container {
+            margin-left: 20%;
+            margin-right: 20%;
+        }
+    </style>
 </head>
 <body>
-    <div id="container1" class="twentytwenty-container">
+    <h2><a href="index.html">home</a></h2>
+    <h2><a href="slider.html">before and after</a></h2>
+
+    <h3>2022 Mar 09 vs. 2022 Mar 30</h3>
+    <div class="twentytwenty-container">
         <img alt="before map" src="img/2022-03-09.jpg" />
         <img alt="after map" src="img/2022-03-30.jpg" />
     </div>
@@ -14,7 +30,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mhayes-twentytwenty/1.0.0/js/jquery.twentytwenty.min.js"></script>
     <script>
         $(function(){
-            $(".twentytwenty-container").twentytwenty();
+            $(".twentytwenty-container").twentytwenty({
+            });
         });
     </script>
 </body>
