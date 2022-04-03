@@ -1,5 +1,11 @@
 body {
     font-family: "Roboto", Helvetica, sans-serif;
+    background-color: #181818;
+    color: snow;
+}
+a {
+    color: #7DA1FB;
+    text-decoration: none;
 }
 h2 {
     text-align:right;
