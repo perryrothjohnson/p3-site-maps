@@ -18,8 +18,8 @@ h3 {
 }
 .twentytwenty-container {
     max-width: 935px;
-    margin-left: calc((100% - 935px)/2);
-    margin-right: calc((100% - 935px)/2);
+    margin-left: max(20%, calc((100% - 935px)/2));
+    margin-right: max(20%, calc((100% - 935px)/2));
 }
 .twentytwenty-left-arrow, .twentytwenty-right-arrow {
     /*remove arrows inside handle*/
@@ -46,6 +46,6 @@ h3 {
 }
 .animation {
     max-width: 935px;
-    margin-left: calc((100% - 935px)/2);
-    margin-right: calc((100% - 935px)/2);
+    margin-left: max(20%, calc((100% - 935px)/2));
+    margin-right: max(20%, calc((100% - 935px)/2));
 }
