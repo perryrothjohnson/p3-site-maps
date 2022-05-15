@@ -13,10 +13,14 @@ h2 {
 .map {
     text-align: center;
 }
+.map-frame {
+    /*resize map heights on mobile*/
+    height: min(600px, 50vh);
+}
 h3 {
     text-align: center;
 }
-.twentytwenty-container {
+.twentytwenty-container, .animation {
     max-width: 935px;
     margin-left: max(20%, calc((100% - 935px)/2));
     margin-right: max(20%, calc((100% - 935px)/2));
@@ -43,9 +47,4 @@ h3 {
 .twentytwenty-horizontal .twentytwenty-handle:after {
     /*bottom half of vertical line between L/R images*/
     margin-top: 32px; /*(default: 22px)*/
-}
-.animation {
-    max-width: 935px;
-    margin-left: max(20%, calc((100% - 935px)/2));
-    margin-right: max(20%, calc((100% - 935px)/2));
 }
