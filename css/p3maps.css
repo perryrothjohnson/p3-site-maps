@@ -15,7 +15,8 @@ h2 {
 }
 .map-frame {
     /*resize map heights on mobile*/
-    height: min(600px, 50vh);
+    height: min(600px, 80vh);
+    width: 80%;
 }
 h3 {
     text-align: center;
@@ -25,6 +26,15 @@ h3 {
     margin-left: max(20%, calc((100% - 935px)/2));
     margin-right: max(20%, calc((100% - 935px)/2));
 }
+.twentytwenty-overlay {
+    display: none;
+}
+/*.twentytwenty-before-label::before {
+    content: "2022 Mar 09";
+}
+.twentytwenty-after-label::before {
+    content: "2022 May 11";
+}*/
 .twentytwenty-left-arrow, .twentytwenty-right-arrow {
     /*remove arrows inside handle*/
     border: 0px; /*vertical height of arrows (default: 6px inset transparent*/
