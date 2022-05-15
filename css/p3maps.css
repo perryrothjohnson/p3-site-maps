@@ -8,19 +8,44 @@ a {
     text-decoration: none;
 }
 h2 {
-    text-align:right;
+    text-align: right;
 }
 .map {
-    text-align:center;
+    text-align: center;
 }
 h3 {
     text-align: center;
 }
 .twentytwenty-container {
-    margin-left: 20%;
-    margin-right: 20%;
+    max-width: 935px;
+    margin-left: calc((100% - 935px)/2);
+    margin-right: calc((100% - 935px)/2);
+}
+.twentytwenty-left-arrow, .twentytwenty-right-arrow {
+    /*remove arrows inside handle*/
+    border: 0px; /*vertical height of arrows (default: 6px inset transparent*/
+}
+.twentytwenty-handle {
+    height: 50px; /*handle height (default: 38px)*/
+    width: 0px; /*handle width (default: 38px)*/
+    margin-left: -5px; /*horizontal position of handle (default: -22px)*/
+    margin-top: -30px; /*vertical position of handle (default: -22px)*/
+    border: 5px solid white; /*handle border (default: 3px solid white)*/
+    -webkit-border-radius: 0px; /*corner radius of handle (default: 1000px)*/
+    -moz-border-radius: 0px; /*corner radius of handle (default: 1000px)*/
+    border-radius: 0px; /*corner radius of handle (default: 1000px)*/
+    cursor: col-resize; /*change cursor style when hovering on handle (default: pointer)*/
+}
+.twentytwenty-horizontal .twentytwenty-handle:before {
+    /*top half of vertical line between L/R images*/
+    margin-bottom: 32px; /*(default: 22px)*/
+}
+.twentytwenty-horizontal .twentytwenty-handle:after {
+    /*bottom half of vertical line between L/R images*/
+    margin-top: 32px; /*(default: 22px)*/
 }
 .animation {
-    margin-left: 20%;
-    margin-right: 20%;
+    max-width: 935px;
+    margin-left: calc((100% - 935px)/2);
+    margin-right: calc((100% - 935px)/2);
 }

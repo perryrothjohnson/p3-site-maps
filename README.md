@@ -6,4 +6,6 @@ A webpage to track progress of the P3 construction site. It collects assets capt
 
 The [before and after](https://perryrothjohnson.github.io/p3-site-maps/slider.html) page uses [TwentyTwenty](https://zurb.com/playground/twentytwenty), a visual diff tool, to compare images captured on different days with an interactive slider.  
 
-See [this how-to video](https://youtu.be/4Z3NWAyFtS0) for more details on setting up the TwentyTwenty jQuery plugin. More details and the full source code also available [here](https://github.com/zurb/twentytwenty).
+See [this how-to video](https://youtu.be/4Z3NWAyFtS0) for more details on setting up the TwentyTwenty jQuery plugin. More details and the full source code also available [here](https://github.com/zurb/twentytwenty).  
+
+The slider [handle style](https://github.com/zurb/twentytwenty/blob/a7b4057817bb098f554c5626a19c3d5ae14b280b/css/twentytwenty.css) has been modified from its [default settings](https://zurb.com/playground/twentytwenty) to look instead like the handles used by [The Verge](https://www.theverge.com/2021/6/22/22545107/satellite-images-california-drought-water-esa).
