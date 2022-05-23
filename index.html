@@ -28,7 +28,7 @@
     </div>
 
     <h2 style=text-align:center>more maps</h2>
-    <div class="map">
+    <!-- <div class="map">
         <h3><a href="https://www.mapsmadeeasy.com/maps/public/aa45858e1f124880b2dcd0afdd0b59e1/">2022 Apr 20</a></h3>
         <h3><a href="https://www.mapsmadeeasy.com/maps/public/c6515bc66bf24d9b8140a2e16994ab57/">2022 Apr 06</a></h3>
         <h3><a href="https://www.mapsmadeeasy.com/maps/public/2df1a878e51c403387fa1b1381b5ee68/">2022 Mar 30</a></h3>
@@ -36,6 +36,39 @@
         <h3><a href="https://www.mapsmadeeasy.com/maps/public/36c19a73dd644870a53d6526ce734194/">2022 Mar 16</a></h3>
         <h3><a href="https://www.mapsmadeeasy.com/maps/public/12a28cbe8e3b4e4799b4986b480dd059/">2022 Mar 09</a></h3>
         <h3><a href="https://www.mapsmadeeasy.com/maps/public/2ec78f7cdd6f40608f21b72b2c7e63c6/">2022 Mar 02</a></h3>
+    </div> -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#select_date').on('change', function(){
+                var demovalue = $(this).val(); 
+                $("div.more_maps").hide();
+                $("#"+demovalue).show();
+            });
+        });
+    </script>
+    <div class="map_picker">
+        <select id="select_date">
+            <option>select month</option>
+            <option value="april_maps">April</option>
+            <option value="march_maps">March</option>
+        </select>
     </div>
+    <div id="april_maps" class="more_maps">
+        <h3><a href="https://www.mapsmadeeasy.com/maps/public/aa45858e1f124880b2dcd0afdd0b59e1/">2022 Apr 20</a></h3>
+        <h3><a href="https://www.mapsmadeeasy.com/maps/public/c6515bc66bf24d9b8140a2e16994ab57/">2022 Apr 06</a></h3>
+    </div>
+    <div id="march_maps" class="more_maps">
+        <h3><a href="https://www.mapsmadeeasy.com/maps/public/2df1a878e51c403387fa1b1381b5ee68/">2022 Mar 30</a></h3>
+        <h3><a href="https://www.mapsmadeeasy.com/maps/public/879d88bb65f8456badbfd4a4abfef784/">2022 Mar 23</a></h3>
+        <h3><a href="https://www.mapsmadeeasy.com/maps/public/36c19a73dd644870a53d6526ce734194/">2022 Mar 16</a></h3>
+        <h3><a href="https://www.mapsmadeeasy.com/maps/public/12a28cbe8e3b4e4799b4986b480dd059/">2022 Mar 09</a></h3>
+        <h3><a href="https://www.mapsmadeeasy.com/maps/public/2ec78f7cdd6f40608f21b72b2c7e63c6/">2022 Mar 02</a></h3>
+    </div>
+    
+    <br />
+    <br />
+    <p class="footer"><a href="https://github.com/perryrothjohnson/p3-site-maps">source code on GitHub</a></p>
 </body>
 </html>

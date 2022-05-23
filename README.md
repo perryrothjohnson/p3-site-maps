@@ -10,6 +10,8 @@ See [this how-to video](https://youtu.be/4Z3NWAyFtS0) for more details on settin
 
 The slider [handle style](https://github.com/zurb/twentytwenty/blob/a7b4057817bb098f554c5626a19c3d5ae14b280b/css/twentytwenty.css) has been modified from its [default settings](https://zurb.com/playground/twentytwenty) to look instead like the handles used by [The Verge](https://www.theverge.com/2021/6/22/22545107/satellite-images-california-drought-water-esa).  
 
+Added dropdown menus to the slider, based on [this tutorial](https://tutorialdeep.com/knowhow/show-hide-div-dropdown-selected/).
+
 The gif animation was made at [EZgif](https://ezgif.com/maker/), with the following options:  
 - delay time: 30 (except first at last frames, which are both 120)
 - crossfade frames
