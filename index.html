@@ -9,8 +9,13 @@
 </head>
 <body>
     <h2><a href="index.html">home</a></h2>
-    <h2><a href="slider.html">before and after</a></h2>
+    <h2><a href="slider.html">before &amp; after</a></h2>
     <h2><a href="albums.html">more</a></h2>
+
+    <div class="map">
+        <h3><a href="https://www.mapsmadeeasy.com/maps/public/79a8128aa7614935b9f7f2cacc7cffe4">2022 May 25</a></h3>
+        <iframe class="map-frame" src="https://www.mapsmadeeasy.com/maps/public/79a8128aa7614935b9f7f2cacc7cffe4" scrolling="no" title="2022 May 25 map" frameBorder ="0"></iframe>
+    </div>
 
     <div class="map">
         <h3><a href="https://www.mapsmadeeasy.com/maps/public/96e103d6555c47b6904d3042fa02b217">2022 May 18</a></h3>
@@ -22,21 +27,7 @@
         <iframe class="map-frame" src="https://www.mapsmadeeasy.com/maps/public/d2a12bdd5ecc478495f72a1a9ebefe59" scrolling="no" title="2022 May 11 map" frameBorder ="0"></iframe>
     </div>
 
-    <div class="map">
-        <h3><a href="https://www.mapsmadeeasy.com/maps/public/2fac7a5cc88646cd80b2728ce6fa8eed">2022 May 04</a></h3>
-        <iframe class="map-frame" src="https://www.mapsmadeeasy.com/maps/public/2fac7a5cc88646cd80b2728ce6fa8eed" scrolling="no" title="2022 May 04 map" frameBorder ="0"></iframe>
-    </div>
-
     <h2 style=text-align:center>more maps</h2>
-    <!-- <div class="map">
-        <h3><a href="https://www.mapsmadeeasy.com/maps/public/aa45858e1f124880b2dcd0afdd0b59e1/">2022 Apr 20</a></h3>
-        <h3><a href="https://www.mapsmadeeasy.com/maps/public/c6515bc66bf24d9b8140a2e16994ab57/">2022 Apr 06</a></h3>
-        <h3><a href="https://www.mapsmadeeasy.com/maps/public/2df1a878e51c403387fa1b1381b5ee68/">2022 Mar 30</a></h3>
-        <h3><a href="https://www.mapsmadeeasy.com/maps/public/879d88bb65f8456badbfd4a4abfef784/">2022 Mar 23</a></h3>
-        <h3><a href="https://www.mapsmadeeasy.com/maps/public/36c19a73dd644870a53d6526ce734194/">2022 Mar 16</a></h3>
-        <h3><a href="https://www.mapsmadeeasy.com/maps/public/12a28cbe8e3b4e4799b4986b480dd059/">2022 Mar 09</a></h3>
-        <h3><a href="https://www.mapsmadeeasy.com/maps/public/2ec78f7cdd6f40608f21b72b2c7e63c6/">2022 Mar 02</a></h3>
-    </div> -->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script>
@@ -50,16 +41,20 @@
     </script>
     <div class="map_picker">
         <select id="select_date">
-            <option>select month</option>
-            <option value="april_maps">April</option>
-            <option value="march_maps">March</option>
+            <option selected>select month</option>
+            <option value="202205_maps">2022 May</option>
+            <option value="202204_maps">2022 April</option>
+            <option value="202203_maps">2022 March</option>
         </select>
     </div>
-    <div id="april_maps" class="more_maps">
+    <div id="202205_maps" class="more_maps">
+        <h3><a href="https://www.mapsmadeeasy.com/maps/public/2fac7a5cc88646cd80b2728ce6fa8eed/">2022 May 04</a></h3>
+    </div>
+    <div id="202204_maps" class="more_maps">
         <h3><a href="https://www.mapsmadeeasy.com/maps/public/aa45858e1f124880b2dcd0afdd0b59e1/">2022 Apr 20</a></h3>
         <h3><a href="https://www.mapsmadeeasy.com/maps/public/c6515bc66bf24d9b8140a2e16994ab57/">2022 Apr 06</a></h3>
     </div>
-    <div id="march_maps" class="more_maps">
+    <div id="202203_maps" class="more_maps">
         <h3><a href="https://www.mapsmadeeasy.com/maps/public/2df1a878e51c403387fa1b1381b5ee68/">2022 Mar 30</a></h3>
         <h3><a href="https://www.mapsmadeeasy.com/maps/public/879d88bb65f8456badbfd4a4abfef784/">2022 Mar 23</a></h3>
         <h3><a href="https://www.mapsmadeeasy.com/maps/public/36c19a73dd644870a53d6526ce734194/">2022 Mar 16</a></h3>
