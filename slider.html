@@ -80,6 +80,39 @@
     <div class="animation">
         <img alt="gif animation of P3 site from 2022 Mar 09 to 2022 Jul 13" src="img/2022-03-09__2022-07-21.gif" style="width: 100%"/>
     </div>
+    <br />
+
+    <h3 id="slider">DTLA skyline slider</h3>
+    <div class="twentytwenty-container">
+        <img id="20220601dtla" class="before_map" alt="before map" src="img/dtla/2022-06-01.jpg" />
+
+        <img id="20220721dtla" class="after_map" alt="after map" src="img/dtla/2022-07-21.jpg" />
+    </div>
+    <div class="map_picker">
+        <label for="before_date"><strong>before:</strong></label>
+        <select id="select_before_date">
+            <option value="20220601dtla" selected>2022 Jun 01</option>
+        </select>
+        &nbsp; vs. &nbsp;<strong>after:</strong> <u>2022 Jul 21</u>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mhayes-twentytwenty/1.0.0/js/jquery.event.move.min.js"></script>
+    <script src="js/jquery.twentytwenty.js"></script>
+    <script>
+        $(window).on('load',function(){
+            $(".twentytwenty-container").twentytwenty({
+                no_overlay: true,
+                move_slider_on_hover: true,
+                move_with_handle_only: false,
+                click_to_move: true
+            });
+            $('#select_before_date').on('change', function(){
+                var before_date_val = $(this).val(); 
+                $("img.before_map").hide();
+                $("#"+before_date_val).show();
+            });
+        });
+    </script>
     
     <br />
     <br />
