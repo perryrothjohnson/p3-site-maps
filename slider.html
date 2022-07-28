@@ -86,10 +86,10 @@
 
     <h3 id="DTLA_slider">DTLA skyline slider</h3>
     <div class="twentytwenty-container">
-        <img id="20220601dtla" class="before_map" alt="before map" src="img/dtla/2022-06-01.jpg" />
-        <img id="20220721dtla" class="before_map" alt="before map" src="img/dtla/2022-07-21.jpg" />
+        <img id="20220601dtla" class="before_map_dtla" alt="before map" src="img/dtla/2022-06-01.jpg" />
+        <img id="20220721dtla" class="before_map_dtla" alt="before map" src="img/dtla/2022-07-21.jpg" />
 
-        <img id="20220727dtla" class="after_map" alt="after map" src="img/dtla/2022-07-27.jpg" />
+        <img id="20220727dtla" class="after_map_dtla" alt="after map" src="img/dtla/2022-07-27.jpg" />
     </div>
     <div class="map_picker">
         <label for="before_date_dtla"><strong>before:</strong></label>
@@ -109,7 +109,7 @@
             });
             $('#select_before_date_dtla').on('change', function(){
                 var before_date_val = $(this).val(); 
-                $("img.before_map").hide();
+                $("img.before_map_dtla").hide();
                 $("#"+before_date_val).show();
             });
         });
