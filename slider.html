@@ -19,7 +19,7 @@
     <p>Compare map images over time with the <a href="#map_slider">before-and-after slider</a> or the <a href="#gif">gif animation</a>. Or, compare photos of the P3 site with the <a href="#DTLA_slider">DTLA skyline</a>.</p>
 
     <h3 id="map_slider">before-and-after slider</h3>
-    <div class="twentytwenty-container">
+    <div id="map_container" class="twentytwenty-container">
         <img id="20220309" class="before_map" alt="before map" src="img/2022-03-09.png" />
         <img id="20220330" class="before_map" alt="before map" src="img/2022-03-30.png" />
         <img id="20220406" class="before_map" alt="before map" src="img/2022-04-06.png" />
@@ -61,7 +61,7 @@
     </div>
     <script>
         $(window).on('load',function(){
-            $(".twentytwenty-container").twentytwenty({
+            $("#map_container").twentytwenty({
                 no_overlay: true,
                 move_slider_on_hover: true,
                 move_with_handle_only: false,
@@ -85,7 +85,7 @@
     <br />
 
     <h3 id="DTLA_slider">DTLA skyline slider</h3>
-    <div class="twentytwenty-container">
+    <div id="dtla_container" class="twentytwenty-container">
         <img id="20220601dtla" class="before_map_dtla" alt="before map" src="img/dtla/2022-06-01.jpg" />
         <img id="20220721dtla" class="before_map_dtla" alt="before map" src="img/dtla/2022-07-21.jpg" />
 
@@ -101,7 +101,7 @@
     </div>
     <script>
         $(window).on('load',function(){
-            $(".twentytwenty-container").twentytwenty({
+            $("#dtla_container").twentytwenty({
                 no_overlay: true,
                 move_slider_on_hover: true,
                 move_with_handle_only: false,
