@@ -16,7 +16,7 @@ The gif animation was made at [EZgif](https://ezgif.com/maker/), with the follow
 - delay time: 20 (except first at last frames, which are both 120)
 - crossfade frames
   - fader delay: 6
-  - frame count: 15
+  - frame count: 10
 
 Then, two rounds of optimization are applied:  
 - lossy GIF (compression level: 70)
