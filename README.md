@@ -19,5 +19,5 @@ The gif animation was made at [EZgif](https://ezgif.com/maker/), with the follow
   - frame count: 10
 
 Then, two rounds of optimization are applied:  
-- lossy GIF (compression level: 70)
-- optimize transparency (fuzz %: 8)
+- lossy GIF (compression level: 75)
+- optimize transparency (fuzz %: 10)
