@@ -13,7 +13,7 @@ The slider [handle style](https://github.com/zurb/twentytwenty/blob/a7b4057817bb
 Added dropdown menus to the slider, based on [this tutorial](https://tutorialdeep.com/knowhow/show-hide-div-dropdown-selected/).
 
 The gif animation was made at [EZgif](https://ezgif.com/maker/), with the following options:  
-- delay time: 20 (except first at last frames, which are both 120)
+- delay time: 10 (except first at last frames, which are both 110)
 - crossfade frames
   - fader delay: 6
   - frame count: 10
