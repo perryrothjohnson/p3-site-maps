@@ -16,7 +16,7 @@
     <h2><a href="slider.html">before &amp; after</a></h2>
     <h2><a href="albums.html">videos &amp; more</a></h2>
 
-    <p>Compare images over time. View aerial maps with a <a href="#map_slider">slider</a> or <a href="#gif">gif</a>, or view photos of the <a href="#DTLA_slider">DTLA skyline</a>.</p>
+    <p>Compare images over time. View aerial maps with a <a href="#map_slider">slider</a> or <a href="#gif">gif</a>, or view photos of the <a href="#DTLA_slider">DTLA skyline</a>. And check the status of ET-94 restoration with <a href="#ET94_slider">this slider</a>.</p>
 
 
     <!-- MAP SLIDER ******************************************************* -->
@@ -187,6 +187,50 @@
             $('#select_before_date_dtla').on('change', function(){
                 var before_date_val = $(this).val(); 
                 $("img.before_map_dtla").hide();
+                $("#"+before_date_val).show();
+            });
+        });
+    </script>
+    <br />
+    <br />
+
+
+    <!-- ET-94 SLIDER ********************************************** -->
+
+    <h3 id="ET94_slider">ET-94 slider</h3>
+    <div id="et94_container" class="twentytwenty-container">
+        <img id="20220921et94" class="before_map_et94" alt="before map" src="img/et94/2022-09-21.jpg" />
+        <img id="20221026et94" class="before_map_et94" alt="before map" src="img/et94/2022-10-26.jpg" />
+        <img id="20221117et94" class="before_map_et94" alt="before map" src="img/et94/2022-11-17.jpg" />
+        <img id="20221130et94" class="before_map_et94" alt="before map" src="img/et94/2022-11-30.jpg" />
+        <img id="20221207et94" class="before_map_et94" alt="before map" src="img/et94/2022-12-07.jpg" />
+        <img id="20221214et94" class="before_map_et94" alt="before map" src="img/et94/2022-12-14.jpg" />
+
+        <img id="20221222et94" class="after_map_et94" alt="after map" src="img/et94/2022-12-22.jpg" />
+    </div>
+    <div class="map_picker">
+        <label for="before_date_et94"><strong>before:</strong></label>
+        <select id="select_before_date_et94">
+            <option value="20221214et94">2022 Dec 14</option>
+            <option value="20221207et94">2022 Dec 07</option>
+            <option value="20221130et94">2022 Nov 30</option>
+            <option value="20221117et94">2022 Nov 17</option>
+            <option value="20221026et94">2022 Oct 26</option>
+            <option value="20220921et94" selected>2022 Sep 21</option>
+        </select>
+        &nbsp; vs. &nbsp;<strong>after:</strong> <u>2022 Dec 22</u>
+    </div>
+    <script>
+        $(window).on('load',function(){
+            $("#et94_container").twentytwenty({
+                no_overlay: true,
+                move_slider_on_hover: true,
+                move_with_handle_only: false,
+                click_to_move: true
+            });
+            $('#select_before_date_et94').on('change', function(){
+                var before_date_val = $(this).val(); 
+                $("img.before_map_et94").hide();
                 $("#"+before_date_val).show();
             });
         });
