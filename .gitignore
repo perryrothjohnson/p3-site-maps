@@ -1,7 +1,7 @@
 *.sublime-workspace
 *.sublime-project
 *.psd
-img/crop/*
-img/lg/*
 theverge-imageslider.css
-img/gif/gifsicle.exe
+img/map/crop/*
+img/map/lg/*
+img/map/gif/gifsicle.exe
