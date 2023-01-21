@@ -16,9 +16,9 @@ a.tabs:hover {
     text-decoration: none;
 }
 .nav {
-    /*nav max text width is 334.95px (all), or min text width is 176.4837px (just before & after)*/
+    /*nav max text width is 224.8001px (all), or min text width is 96.3334px (just videos)*/
     /*top right bottom left*/
-    margin: 0% 10% 50px max(66.7%, calc(90% - 345px));
+    margin: 0% 10% 50px max(66.7%, calc(90% - (225px + 10px)));
     padding: 5px 5px 0px 0px;
     border-style: none none solid none;
     border-width: 1px;
@@ -34,8 +34,9 @@ p, .map, .more_maps {
 }
 ul {
     /*top right bottom left*/
-    margin: 0px 10% 0px 32%;
+    margin: 0px 30% 0px 32%;
     list-style-type: none;
+    list-style-position: inside;
 }
 li {
     /*top right bottom left*/
