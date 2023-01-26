@@ -28,7 +28,6 @@ a.tabs:hover {
 }
 p, .map, .more_maps {
     text-align: center;
-    /*margin-bottom: 40px;*/
     /*top right bottom left*/
     margin: 0px 10% 40px 10%;
 }
