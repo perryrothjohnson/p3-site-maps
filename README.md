@@ -12,4 +12,6 @@ The slider [handle style](https://github.com/zurb/twentytwenty/blob/a7b4057817bb
 
 Added dropdown menus to the slider, based on [this tutorial](https://tutorialdeep.com/knowhow/show-hide-div-dropdown-selected/).  
 
+Latest maps have been resized down to 97.5% of original size to match when overlaid on previous maps in before and after slider.  
+
 The gif animation was made locally with the command-line utility [gifsicle](https://www.lcdf.org/gifsicle/), using [this script](https://github.com/perryrothjohnson/p3-site-maps/blob/main/img/gif/makegif.bat). Alternatively, you can also make gifs in a web browser at [EZgif](https://ezgif.com/maker/).
